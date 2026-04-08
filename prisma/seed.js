@@ -10,12 +10,12 @@ const adapter = new PrismaPg(pool);
 const db = new PrismaClient({ adapter });
 
 // ── CHANGE THIS ───────────────────────────────────────────────────────────────
-const BOOKING_ID = "your-booking-id-here";
+const BOOKING_ID = "dbaf1eb2-48a0-4b93-824d-e5a4a0b2b5ac";
 // ─────────────────────────────────────────────────────────────────────────────
 
 const feedback = {
   summary:
-    "Piyush demonstrated a solid understanding of React fundamentals and component architecture. He approached problems methodically and showed good instincts around state management. With some refinement in system design and async patterns, he's well on track for a mid-level frontend role.",
+    "Ajeet demonstrated a solid understanding of React fundamentals and component architecture. He approached problems methodically and showed good instincts around state management. With some refinement in system design and async patterns, he's well on track for a mid-level frontend role.",
   technical:
     "Strong grasp of React hooks, component lifecycle, and basic TypeScript. Handled the closure question confidently. Struggled slightly with the event loop explanation and needed hints on optimising a recursive tree traversal — but recovered well once guided.",
   communication:
@@ -39,7 +39,7 @@ const feedback = {
   overallRating: "GOOD", // POOR | AVERAGE | GOOD | EXCELLENT
   sessionRating: 4,
   sessionComment:
-    "Great session — Piyush was engaged and receptive to feedback. Would be happy to interview him again after he's done more system design prep.",
+    "Great session — Ajeet was engaged and receptive to feedback. Would be happy to interview him again after he's done more system design prep.",
 };
 
 async function main() {
