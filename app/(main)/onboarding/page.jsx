@@ -27,9 +27,9 @@ export default function OnboardingPage() {
 
   useEffect(() => {
     if (data && !loading) {
-      router.push(role === "INTERVIEWER" ? "/dashboard" : "/explore");
+      window.location.reload();
     }
-  }, [data, router]);
+  }, [data, loading]);
 
   const toggleCategory = (val) => {
     setForm((prev) => ({
@@ -224,9 +224,7 @@ export default function OnboardingPage() {
             >
               {loading
                 ? "Setting up your account…"
-                : role === "INTERVIEWER"
-                ? "Create interviewer profile →"
-                : "Go to dashboard →"}
+                : "Continue →"}
             </Button>
           </div>
         )}
