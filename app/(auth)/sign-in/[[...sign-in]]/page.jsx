@@ -2,11 +2,11 @@ import { SignIn } from "@clerk/nextjs";
 
 export default function Page() {
   return (
-    <div className="relative">
+    <div className="flex justify-center items-center min-h-screen bg-black relative">
       <SignIn />
       
-      {/* Test Credentials Section */}
-      <div className="absolute top-4 right-4 bg-[#1a1a1a] border border-white/10 rounded-lg p-4 max-w-xs">
+      {/* Test Credentials Section - Fixed positioning */}
+      <div className="fixed top-4 right-4 bg-[#1a1a1a] border border-white/10 rounded-lg p-4 max-w-xs z-50 shadow-xl">
         <h3 className="text-sm font-semibold text-stone-200 mb-3">🔧 Test Credentials</h3>
         
         <div className="space-y-3">
