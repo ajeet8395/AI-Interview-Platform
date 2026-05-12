@@ -5,6 +5,7 @@ import Link from "next/link";
 import Image from "next/image";
 import RoleRedirect from "./RoleRedirect";
 import CreditButton from "./CreditButton";
+import GetCredentialButton from "./GetCredentialButton";
 import { CalendarDays, Users } from "lucide-react";
 
 const Header = async () => {
@@ -26,6 +27,7 @@ const Header = async () => {
 
       <div className="flex items-center gap-3">
         <SignedOut>
+          <GetCredentialButton />
           <SignInButton mode="modal">
             <Button variant="ghost">Sign in</Button>
           </SignInButton>

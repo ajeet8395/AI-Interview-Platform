@@ -42,10 +42,10 @@ export default function RootLayout({ children }) {
           >
             <Header />
             <main className="min-h-screen">{children}</main>
-            <Toaster richColors />
+            <Toaster richColors position="top-right" />
 
             <footer className="relative z-10 border-t border-white/7 py-12  mx-auto px-6 flex flex-wrap items-center justify-center text-stone-400">
-              Made with ❤️ by <a href="https://ajeetsingh.in/" target="_blank" rel="noopener noreferrer" className="text-amber-400 hover:text-amber-300 transition-colors underline"> Ajeet Singh</a>
+              Made with ❤️ by&nbsp;<a href="https://ajeetsingh.in/" target="_blank" rel="noopener noreferrer" className="text-amber-400 hover:text-amber-300 transition-colors underline"> Ajeet Singh</a>
             </footer>
           </ThemeProvider>
         </body>
